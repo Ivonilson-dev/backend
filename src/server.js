@@ -12,6 +12,11 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+// Health check route
+app.get('/ping', (req, res) => {
+  res.json({ message: 'pong', status: 'OK' });
+});
+
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/transactions', transactionRoutes);
