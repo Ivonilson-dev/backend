@@ -1,0 +1,30 @@
+# Environment variables
+.env
+.env.production
+.env.test
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mac system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Prisma
+/prisma/migrations/
+*.sqlite
+*.sqlite-journal
+
+# Editor directories
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Vercel
+.vercel
